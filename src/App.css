@@ -1,0 +1,634 @@
+
+/* Header Styles */
+.header {
+  background-color: #c3d171;
+  color: white;
+  padding-left: 2px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* Footer.css */
+.footer {
+  background-color: #c3d171; /* Green background color */
+  font-size: 27px;
+  color: white; /* White text color */
+  padding: 10px; /* Padding around the footer */
+  text-align: center; /* Centered text */
+  position: relative; /* Position relative for layout */
+  bottom: 0; /* Stick to the bottom */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 200px; /* 200px margin on the right and left */
+}
+
+.footer-content {
+  max-width: 100%; /* Allow full width within the footer */
+}
+
+.footer-links {
+  margin-top: 10px; /* Space above links */
+}
+
+.footer-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Space between links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Form Styles */
+.form-container {
+  background-color: #a0beb2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* List Styles */
+.list-container {
+  background-color: #a9e2c3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* Button Styles */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #023004;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .app-container {
+      padding: 10px;
+  }
+
+  .form-container, .list-container {
+      padding: 15px;
+  }
+}
+/* Dashboard Styles */
+.dashboard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  
+  text-align: center; /* Center the text */    
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.dashboard h1 {
+  color: #000000; /* Darker color for the heading */
+}
+
+.dashboard nav {
+  margin-top: 20px; /* Space between heading and nav */
+}
+
+.dashboard nav a {
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: #93fc3e; /* Link color */
+  font-size: 29px;
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.dashboard nav a:hover {
+  color: #45a049; /* Darker green on hover */
+}
+/* Vehicle Form Styles */
+.vehicle-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space below the form */
+}
+
+.vehicle-form h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  color: #333; /* Darker color for the heading */
+}
+
+.vehicle-form input,
+.vehicle-form select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Edit button styles */
+button.edit {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete button styles */
+button.delete {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.edit-form {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  background-color: #e7f3ff;
+}
+
+.edit-form h3 {
+  text-align: center;
+  color: #007bff;
+}
+
+.edit-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #28a745; /* Green for update */
+  color: white;
+}
+
+.edit-form button[type="button"] {
+  background-color: #dc3545; /* Red for cancel */
+  color: white;
+}
+.vehicle-form button {
+  background-color: #4CAF50; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.vehicle-form button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.vehicle-form p {
+  color: #4CAF50; /* Success message color */
+  margin-top: 10px; /* Space above the message */
+}
+
+
+/* App.css */
+
+/* Employee Form Styles */
+.employee-form {
+  background-color: hsla(0, 0%, 96%, 0.829);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Space above the form */
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+
+.employee-form h3 {
+  margin-bottom: 15px; /* Space below the heading */
+  color: #333; /* Darker color for the heading */
+  
+}
+
+.employee-form input {
+  display: block; /* Stack inputs vertically */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  margin-bottom: 10px; /* Space between inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.employee-form button {
+  background-color: #4CAF50; /* Green color for update button */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.employee-form button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+/* General Styles */
+.employee-list {
+  margin: 0 auto; /* Center the list */
+  padding: 20px; /* Add padding around the list */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading Styles */
+.employee-list h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Darker color for the heading */
+}
+
+/* Search Input Styles */
+.employee-list input[type="text"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  margin-bottom: 20px; /* Space below the input */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+/* Button Styles */
+.employee-list button {
+  background-color: #4CAF50; /* Green color for buttons */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding inside buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 10px; /* Space between buttons */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.employee-list button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Button Styles */
+.employee-list button {
+  background-color: #4CAF50; /* Green color for buttons */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding inside buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 10px; /* Space between buttons */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.employee-list button.delete {
+  background-color: #f44336; /* Red color for delete button */
+}
+
+.employee-list button:hover {
+  background-color: #022e04; /* Darker green on hover */
+}
+
+.employee-list button.delete:hover {
+  background-color: #41031a; /* Darker red on hover */
+}
+/* Button Container */
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 10px; /* Space above the buttons */
+}
+
+.button-container button {
+  margin-left: 10px; /* Space between buttons */
+}
+
+/* Search and Sort Container */
+.search-sort-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between search and sort buttons */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+.sort-buttons {
+  display: flex; /* Flexbox for sorting buttons */
+}
+
+.sort-button {
+  margin-left: 10px; /* Space between sorting buttons */
+}
+/* Vehicle List Styles */
+.vehicle-list {
+  margin: 0 auto; /* Center the list */
+  padding: 10px; /* Add padding around the list */
+  border: 1px solid #ccc; /* Border for the list */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.vehicle-list h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Darker color for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* List Styles */
+.vehicle-list ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.vehicle-list li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for list items */
+  border-bottom: 1px solid #ccc; /* Bottom border for separation */
+}
+
+.vehicle-list li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+/* Button Styles */
+.vehicle-list button {
+  padding: 10px 20px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Edit button styles */
+.vehicle-list button.edit {
+  background-color: #28a745; /* Green for edit button */
+  color: white; /* Text color */
+}
+
+.vehicle-list button.edit:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete button styles */
+.vehicle-list button.delete {
+  background-color: #dc3545; /* Red for delete button */
+  color: white; /* Text color */
+}
+
+.vehicle-list button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Update button styles */
+.edit-form button[type="submit"] {
+  background-color: #007bff; /* Blue for update button */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.edit-form button[type="submit"]:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+}
+
+/* Cancel button styles */
+.edit-form button[type="button"] {
+  background-color: #dc3545; /* Red for cancel button */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+
+/* Legal Styles */
+.legal {
+  background-color: #f4f4f4; /* Light background color for the legal section */
+  padding: 20px; /* Padding around the section */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-left: 200px; /* Align with other components */
+  margin-right: 200px; /* Align with other components */
+  text-align: center; /* Justify text */
+}
+
+.legal h1,.legal h3 {
+  color: #333; /* Darker color for headings */
+  text-align: center; /* Center headings */
+}
+.legal h2{
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.legal p {
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+  text-align: center; /* Justify text */
+}
+
+.legal ul {
+  margin-left: 20px; /* Indent unordered lists */
+  text-align: center; /* Justify text in lists */
+}
+
+.legal ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.legal .footer-links {
+  margin-top: 20px; /* Space above footer links */
+  text-align: center; /* Center the footer links */
+}
+
+.legal .footer-links a {
+  color: #4CAF50; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between links */
+}
+
+.legal .footer-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Professional Development Styles */
+.professional-development {
+  margin: 20px 200px; /* Align with other components */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Padding around the section */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.professional-development h2 {
+  color: #333; /* Darker color for the heading */
+  text-align: center; /* Center the heading */
+}
+
+.professional-development form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack inputs vertically */
+  margin-bottom: 20px; /* Space below the form */
+}
+
+.professional-development input[type="text"],
+.professional-development select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.professional-development button {
+  background-color: #4CAF50; /* Green color for buttons */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding inside buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.professional-development button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.professional-development .qualifications-list {
+  margin-top: 20px; /* Space above the list */
+}
+
+.professional-development ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.professional-development li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for list items */
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+}
+
+.professional-development li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.professional-development .error {
+  color: red; /* Red color for error messages */
+  margin-top: 10px; /* Space above the error message */
+}
+
+.professional-development .success-message {
+  color: #4CAF50; /* Green color for success messages */
+  margin-top: 10px; /* Space above the success message */
+}
+
+
+.dashboard {
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Allow absolute positioning of circles */
+}
+
+.description {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #555; /* Adjust color as needed */
+}
+
+.social-media-icons {
+  margin-top: 20px;
+}
+
+.social-media-icons h3 {
+  margin-bottom: 10px;
+}
+.search-bar {
+  width: 50%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  margin-bottom: 20px; /* Space below the search bar */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.search-bar:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
